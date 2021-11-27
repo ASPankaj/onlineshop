@@ -47,6 +47,7 @@ function renderGame() {
     } else if (sum === 21) {
         message = "You've got Blackjack! Please refresh the page to start new game"
         hasBlackJack = true
+		 document.getElementById("myBtn").disabled = true
     } else {
         message = "You're out of the game! Please refresh the page"
         isAlive = false

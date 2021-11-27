@@ -8,14 +8,19 @@
         <p id="cards-el">Cards:</p>
         <p id="sum-el">Sum:</p>
         <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
+        <button onclick="newCard()" id="myBtn">DRAW NEW CARD</button>
 		<button onClick="window.location.reload();"/>REFRESH</button>
 	
         <p id="player-el"></p>
 		<form action="games.html">
 			<button>Back</button>
 		</form>
-
+		
+		<h2>Rules for the game</h2>
+		
+			<li> You will get two cards randomly as you start the game</li>
+			<li> Draw new card and the sum of all the three cards should be 21 to win the game</li>
+		
         <script src="js/blackjack.js"></script>
     </body>
 </html>
