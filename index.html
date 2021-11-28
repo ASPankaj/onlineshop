@@ -1,40 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta  charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<title>My Online Shop</title>
-				<link rel="stylesheet" href="css/main.css">
-				</head>
-				<body>
-					<header>
-						<a href="#" class="logo">Stationary<span>.</span>
-						</a>
-						<ul class = "navigation">
-							<li>
-								<a href="#banner">Home</a>
-							</li>
-							<li>
-								<a href="games.html">Games</a>
-							</li>
-							<li>
-								<a href="#games">Contact</a>
-							</li>
-						</ul>
-					</header>
+  <head>
+    <meta  charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Online Shop</title>
+        <link rel="stylesheet" href="css/main.css">
+        </head>
+        <body>
+          <header>
+            <a href="#" class="logo">Stationary<span>.</span>
+            </a>
+            <ul class = "navigation">
+              <li>
+                <a href="#banner">Home</a>
+              </li>
+              <li>
+                <a href="games.html">Games</a>
+              </li>
+              <li>
+                <a href="#products">Products</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+            </ul>
+          </header>
 
-					<section class="banner" id="banner">
-						<div class="content">
-							<h2 id = "welcomeh2"> Always Choose Good</h2>					
-							<a href="#" class="btn" >Browse Products</a>
-						</div>
-					</section>
-					
-						<script type="text/javascript">
-						window.addEventListener('scroll', function(){
-						const header = document.querySelector('header');
-						header.classList.toggle("sticky", window.scrollY > 0)
-						});						
-					</script> 
-					</body>
-				</html>
+          <section class="banner" id="banner">
+            <div class="content">
+              <h2 id = "welcomeh2"> Always Choose Good</h2>          
+              <a href="#" class="btn" >Browse Products</a>
+            </div>
+          </section>
+          
+          <section class="about" id="about">
+            <div class="row">
+              <div class="col50">
+                <h2 class= "titleText"> <span>A</span>bout Us</h2>  
+                <p> About us  Duis ut velit gravida nibh bibendum commodo. Sus-pendisse pellentesque mattis augue id euismod. Inter-dum et malesuada fames</p>
+              </div>
+              <div class="col50">
+                <div class="imgBx">
+                  <img src="img/aboutus.jpg">
+                </div>
+              </div>
+            </div>
+          </section>
+		  
+		  <section class="products" id="products">
+            <div class="title">
+               <h2 class= "titleText"> <span>O</span>ur Products</h2> 
+			</div>
+			
+            <div class="content">
+                <div class="box">
+					<div class="imgBx">
+						<img src="img/toys/chessandLudo.jpeg">
+					</div>
+					<div class="text">
+						<h3>Chess and Ludo </h3>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="imgBx">
+						<img src="img/menu2.jpg">
+					</div>
+					<div class="text">
+						<h3>Special Salads</h3>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="imgBx">
+						<img src="img/menu3.jpg">
+					</div>
+					<div class="text">
+						<h3>Special Salads</h3>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="imgBx">
+						<img src="img/menu4.jpg">
+					</div>
+					<div class="text">
+						<h3>Special Salads</h3>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="imgBx">
+						<img src="img/menu5.jpg">
+					</div>
+					<div class="text">
+						<h3>Special Salads</h3>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="imgBx">
+						<img src="img/menu6.jpg">
+					</div>
+					<div class="text">
+						<h3>Special Salads</h3>
+					</div>
+				</div>
+				
+				<div class="title">
+				   <a href= "#" class="btn"> View All</a> 
+				</div>
+				
+			</div>
+          </section>
+          
+		  <!-- for future reviews from customers  -->
+		  <section class="HappyCustomers" id="HappyCustomers">
+            <div class="title white">
+               <h2 class= "titleText"> <span>O</span>ur Happy Customers</h2> 
+			</div>
+			<div class="content">
+                <div class="box">
+					<div class="imgBx">
+						<img src="img/testi1.jpg">
+					</div>
+					<div class="text">
+						<p>Customer 1</p>
+						<h3>Happy Customers</h3>
+					</div>
+				</div>
+				 <div class="box">
+					<div class="imgBx">
+						<img src="img/testi2.jpg">
+					</div>
+					<div class="text">
+						<p>Customer 2</p>
+						<h3>Happy Customers</h3>
+					</div>
+				</div>
+				 <div class="box">
+					<div class="imgBx">
+						<img src="img/testi3.jpg">
+					</div>
+					<div class="text">
+						<p>Customer 3</p>
+						<h3>Happy Customers</h3>
+					</div>
+				</div>
+				 
+				
+			</div>
+				
+			
+		  </section>
+		  
+		  
+            <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+            });            
+          </script> 
+          </body>
+        </html>
