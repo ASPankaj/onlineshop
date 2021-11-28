@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="en">
 	<head>
-		<title>My Online Shop</title>
-		<link rel="stylesheet" href="css/main.css">
-		
-	</head>
-	<body>
-		<ul>
-			<li><a class="active" href="#home">Home</a></li>
-			<li><a href="games.html">Games</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#about">About</a></li>
-		</ul>
-	</body>
-</html>
+		<meta  charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>My Online Shop</title>
+				<link rel="stylesheet" href="css/main.css">
+				</head>
+				<body>
+					<header>
+						<a href="#" class="logo">Stationary<span>.</span>
+						</a>
+						<ul class = "navigation">
+							<li>
+								<a href="#banner">Home</a>
+							</li>
+							<li>
+								<a href="games.html">Games</a>
+							</li>
+							<li>
+								<a href="#games">Contact</a>
+							</li>
+						</ul>
+					</header>
+
+					<section class="banner" id="banner">
+						<div class="content">
+							<h2 id = "welcomeh2"> Always Choose Good</h2>					
+							<a href="#" class="btn" >Browse Products</a>
+						</div>
+					</section>
+					
+						<script type="text/javascript">
+						window.addEventListener('scroll', function(){
+						const header = document.querySelector('header');
+						header.classList.toggle("sticky", window.scrollY > 0)
+						});						
+					</script> 
+					</body>
+				</html>
